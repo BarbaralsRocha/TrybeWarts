@@ -9,4 +9,3 @@ buttonHeader.addEventListener('click', () => {
     alert('Email ou senha inválidos.');
   }
 });
-
