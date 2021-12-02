@@ -1,6 +1,6 @@
 const buttonHeader = document.getElementById('button-header');
-const email = document.getElementById('input-email');
-const password = document.getElementById('input-password');
+const email = document.getElementById('email');
+const password = document.getElementById('password');
 
 buttonHeader.addEventListener('click', () => {
   if (email.value === 'tryber@teste.com' && password.value === '123456') {
