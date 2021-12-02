@@ -23,7 +23,14 @@
     height: 500px;
   }
 
+<<<<<<< HEAD
   footer{
       display:flex;
       align-content: flex-end;
   }
+=======
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+>>>>>>> f6b9fb7b62a5c1c24a630b6a15c58589ae5010fd
