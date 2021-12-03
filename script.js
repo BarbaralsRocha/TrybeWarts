@@ -34,18 +34,15 @@ function countCaracter() {
 }
 countCaracter();
 
+const materias = document.querySelectorAll('.subject');
 function checkboxValidation() {
-  const materias = document.querySelectorAll('.subject');
-  materias.
-  console.log(materias)
-  const materiaChecked = [];
+  let materiasChecked = '';
   for (let i = 0; i < materias.length; i += 1) {
     if (materias[i].checked) {
-      materiaChecked.push(materias[i].value);
+      materiasChecked += ` ${materias[i].value}`;
     }
-    console.log(materiaChecked, 'teste');
-    return materiaChecked;
   }
+  return materiasChecked;
 }
 
 function validate() {
@@ -56,11 +53,12 @@ function validate() {
     const emailInput = document.getElementById('input-email').value;
     const house = document.getElementById('house').value;
     const family = document.querySelector('input[name="family"]:checked').value; // referencia :https://backefront.com.br/obter-valor-selecionado-radio-button/
+    const avaliacao = document.querySelector('input[name="rate"]:checked').value;
     const forms = document.getElementById('evaluation-form');
     const validateForms = document.getElementById('validate-forms');
-
+    const observacoes = document.getElementById('textarea').value;
     forms.innerHTML = '';
-    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${checkboxValidation()}\n`;
+    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
     validateForms.innerText = formulario;
   });
 }
