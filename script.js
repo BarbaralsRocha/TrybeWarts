@@ -34,17 +34,23 @@ function countCaracter() {
 }
 countCaracter();
 
-const materias = document.querySelectorAll('.subject');
-let materiaChecked;
-for (let i = 0; i < materias.length; i += 1) {
-  if (materias[i].checked) {
-    materiaChecked += materias[i].value;
+function checkboxValidation() {
+  const materias = document.querySelectorAll('.subject');
+  materias.
+  console.log(materias)
+  const materiaChecked = [];
+  for (let i = 0; i < materias.length; i += 1) {
+    if (materias[i].checked) {
+      materiaChecked.push(materias[i].value);
+    }
+    console.log(materiaChecked, 'teste');
+    return materiaChecked;
   }
-  console.log(materiaChecked);
 }
 
 function validate() {
-  formsButton.addEventListener('click', () => {
+  formsButton.addEventListener('click', (event) => {
+    event.preventDefault();
     const name = document.getElementById('input-name').value;
     const lastname = document.getElementById('input-lastname').value;
     const emailInput = document.getElementById('input-email').value;
@@ -54,7 +60,7 @@ function validate() {
     const validateForms = document.getElementById('validate-forms');
 
     forms.innerHTML = '';
-    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${materiaChecked}\n`;
+    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${checkboxValidation()}\n`;
     validateForms.innerText = formulario;
   });
 }

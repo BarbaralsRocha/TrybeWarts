@@ -22,7 +22,7 @@ main {
   height: 500px;
 }
 
-#validate-forms{
-    display:flex;
-   /* flex-direction:row;*/
+#validate-forms {
+  display: flex;
+  /* flex-direction:row;*/
 }
