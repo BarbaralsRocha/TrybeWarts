@@ -33,3 +33,29 @@ function countCaracter() {
   });
 }
 countCaracter();
+
+const materias = document.querySelectorAll('.subject');
+let materiaChecked;
+for (let i = 0; i < materias.length; i += 1) {
+  if (materias[i].checked) {
+    materiaChecked += materias[i].value;
+  }
+  console.log(materiaChecked);
+}
+
+function validate() {
+  formsButton.addEventListener('click', () => {
+    const name = document.getElementById('input-name').value;
+    const lastname = document.getElementById('input-lastname').value;
+    const emailInput = document.getElementById('input-email').value;
+    const house = document.getElementById('house').value;
+    const family = document.querySelector('input[name="family"]:checked').value; // referencia :https://backefront.com.br/obter-valor-selecionado-radio-button/
+    const forms = document.getElementById('evaluation-form');
+    const validateForms = document.getElementById('validate-forms');
+
+    forms.innerHTML = '';
+    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${materiaChecked}\n`;
+    validateForms.innerText = formulario;
+  });
+}
+validate();
