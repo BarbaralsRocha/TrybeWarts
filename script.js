@@ -23,12 +23,12 @@ check.addEventListener('click', () => {
 
 function countCaracter() {
   textarea.value = '';
-  const words = textarea.value.split('');
-  let contador = 500;
+  const contador = 500;
+  let caracter = 0;
   textarea.addEventListener('keyup', () => {
-    for (let i = 0; i < words.length; i += 1) {
-      contador -= 1;
-      counter.innerText = contador;
+    if (contador >= textarea.value.length) {
+      caracter = contador - textarea.value.length;
+      counter.innerText = `Caracteres: ${caracter}`;
     }
   });
 }
