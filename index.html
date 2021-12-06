@@ -7,11 +7,12 @@
     <title>Trybewarts</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:670px)">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">  
+    <body>
     <header class="header">
         <img
           class="trybewarts-header-logo"
-          src="trybewarts-header-logo.svg"
+          src="images/trybewarts-header-logo.svg"
           alt="logo-trybe"
         />
         <h1 id="trybewarts-header-title">Trybewarts</h1>
@@ -27,7 +28,6 @@
       </form>
     </header>
     <main>
-      <p id="validate-forms"></p>
       <form id="evaluation-form" action="" method="get">
         <div>
           <input type="text" name="nome" id="input-name" placeholder="Nome" />
@@ -89,17 +89,17 @@
           <input type="radio" name="rate" value="9" />9
           <input type="radio" name="rate" value="10" />10
         </div>
-        <div>
-          <p id="counter">Caracteres: 500</p>
-          <label class="textarea">Deixe seu comentário:</label>
+        <div id="container-textarea">
+          <label class="textarea">Deixe seu comentário:</label><br>
           <textarea
             id="textarea"
-            cols="30"
+            cols="90"
             rows="10"
             maxlength="500"
           ></textarea>
+          <p id="counter">Caracteres: 500</p>
         </div>
-        <div>
+        <div id="avaliation">
           <label for="" id="label-infos"
             >Você concorda com o uso das informações acima?</label
           >
@@ -107,7 +107,7 @@
         </div>
         <button type="submit" id="submit-btn">Enviar</button>
       </form>
-      <img src="trybewarts-colored.svg" id="trybewarts-forms-logo" />
+      <img src="images/trybewarts-colored.svg" id="trybewarts-forms-logo" />
     </main>
     <footer>Direitos reservados à Trybewarts©</footer>
     <script src="script.js"></script>

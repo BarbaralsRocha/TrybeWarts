@@ -43,18 +43,22 @@ h1 {
 
 main {
   display: flex;
+  justify-content: center;
+  flex-basis: 50%;
 }
 
 #evaluation-form {
   display: flex;
   width: 675px;
   flex-direction: column;
-  margin: 35px;
+  margin: 60px;
 }
 
 #trybewarts-forms-logo {
   height: 500px;
   display: flex;
+  align-self: center;
+  flex-basis: 50%;
 }
 
 #validate-forms {
@@ -66,15 +70,17 @@ main {
   margin: 3px;
   border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.349);
+  width: 45%;
 }
 
 #house {
   padding: 10px 40px;
+  width: 49%;
 }
 
 #family {
   margin-top: 10px;
-  flex-basis: 30%;
+  flex-basis: 50%;
 }
 
 #family input , #tech input , #avaliation input {
@@ -83,7 +89,7 @@ main {
 
 #tech {
   margin-top: 10px;
-  flex-basis: 50%;
+  flex-basis: 80%;
 }
 
 #container-family-tech {
@@ -92,4 +98,19 @@ main {
 
 #avaliation {
   margin-top: 15px;
+}
+
+#container-textarea , #container-textarea textarea , #avaliation {
+  margin: 15px 0;
+}
+
+footer {
+  text-align: center;
+}
+
+#submit-btn {
+  padding: 15px;
+  font-size: 20px;
+  background-color: rgb(50, 167, 146);
+  color: white;
 }

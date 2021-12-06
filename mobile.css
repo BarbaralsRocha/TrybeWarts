@@ -1,0 +1,29 @@
+.header {
+  width: auto;
+  height: auto;
+  flex-direction: column;
+}
+
+h1 {
+  display: flex;
+}
+
+.trybewarts-header-logo {
+  width: 20%;
+}
+
+main {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.trybewarts-login {
+  flex-direction: column;
+  justify-content: center;
+}
+
+#trybewarts-forms-logo {
+  width: 40%;
+  align-self: center;
+  margin: auto;
+}

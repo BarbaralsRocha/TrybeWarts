@@ -41,7 +41,8 @@ function checkboxValidation() {
   return materiasChecked;
 }
 function validate() {
-  formsButton.addEventListener('click', () => {
+  formsButton.addEventListener('click', (event) => {
+    event.preventDefault();
     const name = document.getElementById('input-name').value;
     const lastname = document.getElementById('input-lastname').value;
     const emailInput = document.getElementById('input-email').value;
@@ -49,11 +50,10 @@ function validate() {
     const family = document.querySelector('input[name="family"]:checked').value; // referencia :https://backefront.com.br/obter-valor-selecionado-radio-button/
     const avaliacao = document.querySelector('input[name="rate"]:checked').value;
     const forms = document.getElementById('evaluation-form');
-    const validateForms = document.getElementById('validate-forms');
     const observacoes = document.getElementById('textarea').value;
     forms.innerHTML = '';
-    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Matérias: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
-    validateForms.innerText = formulario;
+    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
+    forms.innerText = formulario;
   });
 }
 validate();
