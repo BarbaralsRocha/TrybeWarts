@@ -32,10 +32,10 @@ function countCaracter() {
 countCaracter();
 const materias = document.querySelectorAll('.subject');
 function checkboxValidation() {
-  let materiasChecked = '';
+  const materiasChecked = [];
   for (let i = 0; i < materias.length; i += 1) {
     if (materias[i].checked) {
-      materiasChecked += ` ${materias[i].value}`;
+      materiasChecked.push(` ${materias[i].value}`);
     }
   }
   return materiasChecked;
@@ -53,10 +53,10 @@ function validate() {
     const observacoes = document.getElementById('textarea').value;
     forms.innerHTML = '';
     const formulario = `Nome: ${name} ${lastname}
-     Email: ${emailInput}
-      Casa: ${house}
-       Família: ${family}
-        Materia: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
+    Email: ${emailInput}
+    Casa: ${house}
+    Família: ${family}
+    Matérias: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
     forms.innerText = formulario;
   });
 }
