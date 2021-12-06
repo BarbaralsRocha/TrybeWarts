@@ -52,7 +52,11 @@ function validate() {
     const forms = document.getElementById('evaluation-form');
     const observacoes = document.getElementById('textarea').value;
     forms.innerHTML = '';
-    const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
+    const formulario = `Nome: ${name} ${lastname}
+     Email: ${emailInput}
+      Casa: ${house}
+       Família: ${family}
+        Materia: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
     forms.innerText = formulario;
   });
 }
