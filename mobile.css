@@ -23,7 +23,5 @@ main {
 }
 
 #trybewarts-forms-logo {
-  width: 40%;
-  align-self: center;
-  margin: auto;
+  width: auto;
 }
