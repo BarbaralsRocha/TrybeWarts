@@ -55,11 +55,10 @@ function validate() {
     const family = document.querySelector('input[name="family"]:checked').value; // referencia :https://backefront.com.br/obter-valor-selecionado-radio-button/
     const avaliacao = document.querySelector('input[name="rate"]:checked').value;
     const forms = document.getElementById('evaluation-form');
-    const validateForms = document.getElementById('validate-forms');
     const observacoes = document.getElementById('textarea').value;
     forms.innerHTML = '';
     const formulario = `Nome: ${name} ${lastname}\n Email: ${emailInput}\n Casa: ${house}\n Família: ${family}\n Materia: ${checkboxValidation()}\n Avaliação: ${avaliacao}\n Observações: ${observacoes}\n`;
-    validateForms.innerText = formulario;
+    forms.innerText = formulario;
   });
 }
 validate();
