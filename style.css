@@ -26,7 +26,7 @@ h1 {
   margin: 15px;
 }
 
-#password, #email {
+#password , #email {
   border-radius: 5px;
   padding: 8px;
   margin: 2px;
@@ -60,54 +60,3 @@ main {
   align-self: center;
   flex-basis: 50%;
 }
-
-/* #input-name, #input-lastname, #input-email, #house {
-  padding: 10px;
-  margin: 3px;
-  border-radius: 4px;
-  border: 1px solid rgba(0, 0, 0, 0.349);
-  width: 45%;
-}
-
-#house {
-  padding: 10px 40px;
-  width: 49%;
-}
-
-#family {
-  margin-top: 10px;
-  flex-basis: 50%;
-}
-
-#family input, #tech input, #avaliation input {
-  margin: 5px;
-}
-
-#tech {
-  margin-top: 10px;
-  flex-basis: 80%;
-}
-
-#container-family-tech {
-  display: flex;
-}
-
-#avaliation {
-  margin-top: 15px;
-}
-
-#container-textarea, #container-textarea textarea, #avaliation {
-  margin: 15px 0;
-}
-
-footer {
-  text-align: center;
-}
-
-#submit-btn {
-  padding: 15px;
-  font-size: 20px;
-  background-color: rgb(50, 167, 146);
-  color: white;
-}
- */
