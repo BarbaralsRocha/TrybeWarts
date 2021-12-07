@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Outfit", sans-serif;
+  font-family: Outfit, sans-serif;
 }
 
 .header {
@@ -26,7 +26,7 @@ h1 {
   margin: 15px;
 }
 
-#password , #email {
+#password, #email {
   border-radius: 5px;
   padding: 8px;
   margin: 2px;
@@ -61,7 +61,7 @@ main {
   flex-basis: 50%;
 }
 
-#input-name , #input-lastname , #input-email , #house {
+#input-name, #input-lastname, #input-email, #house {
   padding: 10px;
   margin: 3px;
   border-radius: 4px;
@@ -79,7 +79,7 @@ main {
   flex-basis: 50%;
 }
 
-#family input , #tech input , #avaliation input {
+#family input, #tech input, #avaliation input {
   margin: 5px;
 }
 
@@ -96,7 +96,7 @@ main {
   margin-top: 15px;
 }
 
-#container-textarea , #container-textarea textarea , #avaliation {
+#container-textarea, #container-textarea textarea, #avaliation {
   margin: 15px 0;
 }
 
