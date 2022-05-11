@@ -1,6 +1,3 @@
-# Boas vindas ao repositório do projeto Trybewarts Wizarding School! 
-
-
 # Habilidades :mage:
 
 * Criar formulários em HTML;
